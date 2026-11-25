@@ -1,0 +1,20 @@
+{
+  "name": "pi-orchestrator",
+  "version": "1.0.0",
+  "description": "A plan, approval, execute, and review state machine for Pi sessions.",
+  "type": "module",
+  "keywords": ["pi-package"],
+  "license": "MIT",
+  "dependencies": {
+    "@earendil-works/chord": "1.5.2",
+    "@earendil-works/pi-durable": "1.5.2"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "pi": {
+    "extensions": ["./index.ts"]
+  }
+}
