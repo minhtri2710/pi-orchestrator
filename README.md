@@ -5,8 +5,8 @@ A plan/approval/execute/review state machine for one Pi session. Plan state is s
 ## Install
 
 ```sh
-cd ~/Work/pi-orchestrator && npm install --legacy-peer-deps
-pi install ~/Work/pi-orchestrator
+cd ~/Work/pi-extension/pi-orchestrator && npm install --legacy-peer-deps
+pi install ~/Work/pi-extension/pi-orchestrator
 ```
 
 Pi's local package installer does not install npm dependencies; run `npm install --legacy-peer-deps` in the package directory first. Ask the model to use `orchestrator_plan` with a goal, ordered steps, files, verification commands, and replan conditions. Review it with `/orchestrator status`, then run `/orchestrator approve`. During execution, the model marks the active step done with `orchestrator_review` and verification evidence, records a replan finding, or finishes once all steps are done. `/orchestrator on|off|status|models|approve` controls the mode.
